@@ -1,0 +1,51 @@
+html, body {
+    padding: 0;
+    margin: 0;
+}
+body {
+    height: 100%;
+}
+.input-w {
+    position: relative;
+    display: block;
+    width: 400px;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+input[type=text] {
+    position: relative;
+    display: block;
+    filter: none;
+    outline: none;
+    border: 1px solid #454545;
+    width: calc(100% - 2px);
+    top: 0;
+    left: 0;
+    font-family: 'proxima_novaregular';
+    color: #454545;
+    border-radius: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 14px;
+    padding-top: 26px;
+    font-size: large;
+}
+.placeholder {
+    position: absolute;
+    display: block;
+    top: calc(50% - 1px);
+    transform: translateY(-50%);
+    left: 16px; /* input[type=text] padding-left + 1 */
+    font-family: 'proxima_novaregular';
+    color: #959595;
+    font-size: large;
+    cursor: auto;
+}
+
+.animated-transition {
+    transition: all 0.5s;
+}
+.noselect {
+    user-select: none;
+}
